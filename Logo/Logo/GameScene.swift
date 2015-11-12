@@ -36,8 +36,8 @@ class GameScene: SKScene
 		NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "call", userInfo: nil, repeats: true)
 		
 		logo = SKLabelNode(fontNamed: "Alte Haas Grotesk Bold")
-		logo.position = CGPoint(x:CGRectGetMidX(self.frame) - 12.5,y:CGRectGetMidY(self.frame) - (25 * 8))
-		logo.horizontalAlignmentMode = .Center
+		logo.position = CGPoint(x:CGRectGetMidX(self.frame) - (25*10)/2 - 12.5,y:CGRectGetMidY(self.frame) - (25 * 8))
+		logo.horizontalAlignmentMode = .Left
 		logo.text = "hundredrabbits"
 		logo.fontSize = 20
 		logo.alpha = 0
