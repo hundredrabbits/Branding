@@ -13,6 +13,7 @@
 		578E09591BF4DBC2005BDA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578E09581BF4DBC2005BDA1A /* Assets.xcassets */; };
 		578E095C1BF4DBC2005BDA1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578E095A1BF4DBC2005BDA1A /* MainMenu.xib */; };
 		578E09641BF4DD11005BDA1A /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09631BF4DD11005BDA1A /* Rabbit.swift */; };
+		578E09661BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		578E095B1BF4DBC2005BDA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		578E095D1BF4DBC2005BDA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		578E09631BF4DD11005BDA1A /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
+		578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlteHaasGroteskBold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		578E09511BF4DBC2005BDA1A /* Logo */ = {
 			isa = PBXGroup;
 			children = (
+				578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */,
 				578E09521BF4DBC2005BDA1A /* AppDelegate.swift */,
 				578E09541BF4DBC2005BDA1A /* GameScene.swift */,
 				578E09631BF4DD11005BDA1A /* Rabbit.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				578E09591BF4DBC2005BDA1A /* Assets.xcassets in Resources */,
 				578E09571BF4DBC2005BDA1A /* GameScene.sks in Resources */,
+				578E09661BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf in Resources */,
 				578E095C1BF4DBC2005BDA1A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
