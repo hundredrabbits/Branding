@@ -37,7 +37,7 @@ class GameScene: SKScene
 		
 		logo = SKLabelNode(fontNamed: "Alte Haas Grotesk Bold")
 		logo.position = CGPoint(x:CGRectGetMidX(self.frame) - (25*10)/2 - 12.5,y:CGRectGetMidY(self.frame) - (25 * 8))
-		logo.horizontalAlignmentMode = .Center
+		logo.horizontalAlignmentMode = .Left
 		logo.text = "hundredrabbits"
 		logo.fontSize = 20
 		logo.alpha = 0
