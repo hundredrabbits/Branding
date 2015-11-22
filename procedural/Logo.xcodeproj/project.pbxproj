@@ -19,7 +19,6 @@
 		57A4C8C91C026F44008CF210 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4C8C81C026F44008CF210 /* GameViewController.swift */; };
 		57A4C8CC1C026F44008CF210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CA1C026F44008CF210 /* Main.storyboard */; };
 		57A4C8CE1C026F44008CF210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CD1C026F44008CF210 /* Assets.xcassets */; };
-		57A4C8D11C026F44008CF210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */; };
 		57A4C8D61C026FD7008CF210 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09541BF4DBC2005BDA1A /* GameScene.swift */; };
 		57A4C8D81C026FE6008CF210 /* AlteHaasGroteskBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */; };
 		57A4C8D91C026FF0008CF210 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09631BF4DD11005BDA1A /* Rabbit.swift */; };
@@ -42,7 +41,6 @@
 		57A4C8C81C026F44008CF210 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		57A4C8CB1C026F44008CF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57A4C8CD1C026F44008CF210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		57A4C8D01C026F44008CF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A4C8D21C026F44008CF210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57A4C8DA1C02701C008CF210 /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +101,6 @@
 				57A4C8C21C026F44008CF210 /* AppDelegate.swift */,
 				57A4C8C81C026F44008CF210 /* GameViewController.swift */,
 				57A4C8C41C026F44008CF210 /* GameScene.sks */,
-				57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */,
 				57A4C8CA1C026F44008CF210 /* Main.storyboard */,
 				57A4C8CD1C026F44008CF210 /* Assets.xcassets */,
 				57A4C8D21C026F44008CF210 /* Info.plist */,
@@ -173,6 +170,7 @@
 					};
 					57A4C8BF1C026F44008CF210 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = B948MFAE5C;
 					};
 				};
 			};
@@ -212,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A4C8C51C026F44008CF210 /* GameScene.sks in Resources */,
-				57A4C8D11C026F44008CF210 /* LaunchScreen.storyboard in Resources */,
 				57A4C8D81C026FE6008CF210 /* AlteHaasGroteskBold.ttf in Resources */,
 				57A4C8CE1C026F44008CF210 /* Assets.xcassets in Resources */,
 				57A4C8CC1C026F44008CF210 /* Main.storyboard in Resources */,
@@ -261,14 +258,6 @@
 				57A4C8CB1C026F44008CF210 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57A4C8D01C026F44008CF210 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -382,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Logo-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -396,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Logo-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;

@@ -8,4 +8,4 @@ import Foundation
 let black = UIColor.blackColor()
 let white = UIColor.whiteColor()
 
-let rabbitSize:CGFloat = 25
+let rabbitSize:CGFloat = 20

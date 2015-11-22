@@ -1,16 +1,12 @@
-//
-//  GameViewController.swift
-//  Logo-iOS
-//
+
 //  Created by Devine Lu Linvega on 2015-11-22.
 //  Copyright (c) 2015 Devine Lu Linvega. All rights reserved.
-//
 
 import UIKit
 import SpriteKit
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController
+{
     override func viewDidLoad()
 	{
         super.viewDidLoad()
