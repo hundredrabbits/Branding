@@ -20,10 +20,10 @@ class Rabbit : SKNode
 		self.y = y
 		
 		sprite = SKShapeNode(circleOfRadius: 10)
-		sprite.fillColor = NSColor.whiteColor()
-		sprite.strokeColor = NSColor.blackColor()
+		sprite.fillColor = white
+		sprite.strokeColor = white
 		addChild(sprite)
-		position = CGPoint(x: x * 25,y: y * 25)
+		position = CGPoint(x: Double(x) * Double(rabbitSize) - Double(rabbitSize * 4.5),y: Double(y) * Double(rabbitSize) - Double(rabbitSize * 4.5))
 		moves.append(position)
 	}
 	
@@ -50,7 +50,7 @@ class Rabbit : SKNode
 		if canMove == true {
 			x = x + test_x
 			y = y + test_y
-			position = CGPoint(x: x * 25,y: y * 25)
+			position = CGPoint(x: Double(x) * Double(rabbitSize),y: Double(y) * Double(rabbitSize))
 		}
 		moves.append(position)
 	}

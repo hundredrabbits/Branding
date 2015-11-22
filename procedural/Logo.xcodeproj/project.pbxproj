@@ -14,22 +14,48 @@
 		578E095C1BF4DBC2005BDA1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578E095A1BF4DBC2005BDA1A /* MainMenu.xib */; };
 		578E09641BF4DD11005BDA1A /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09631BF4DD11005BDA1A /* Rabbit.swift */; };
 		578E09661BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */; };
+		57A4C8C31C026F44008CF210 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4C8C21C026F44008CF210 /* AppDelegate.swift */; };
+		57A4C8C51C026F44008CF210 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8C41C026F44008CF210 /* GameScene.sks */; };
+		57A4C8C91C026F44008CF210 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4C8C81C026F44008CF210 /* GameViewController.swift */; };
+		57A4C8CC1C026F44008CF210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CA1C026F44008CF210 /* Main.storyboard */; };
+		57A4C8CE1C026F44008CF210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CD1C026F44008CF210 /* Assets.xcassets */; };
+		57A4C8D11C026F44008CF210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */; };
+		57A4C8D61C026FD7008CF210 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09541BF4DBC2005BDA1A /* GameScene.swift */; };
+		57A4C8D81C026FE6008CF210 /* AlteHaasGroteskBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */; };
+		57A4C8D91C026FF0008CF210 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578E09631BF4DD11005BDA1A /* Rabbit.swift */; };
+		57A4C8DB1C02701C008CF210 /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4C8DA1C02701C008CF210 /* settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		578E094F1BF4DBC2005BDA1A /* Logo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578E09521BF4DBC2005BDA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		578E09541BF4DBC2005BDA1A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		578E09541BF4DBC2005BDA1A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Logo/GameScene.swift; sourceTree = "<group>"; };
 		578E09561BF4DBC2005BDA1A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		578E09581BF4DBC2005BDA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		578E095B1BF4DBC2005BDA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		578E095D1BF4DBC2005BDA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		578E09631BF4DD11005BDA1A /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
-		578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlteHaasGroteskBold.ttf; sourceTree = "<group>"; };
+		578E09631BF4DD11005BDA1A /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Logo/Rabbit.swift; sourceTree = "<group>"; };
+		578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlteHaasGroteskBold.ttf; path = Logo/AlteHaasGroteskBold.ttf; sourceTree = "<group>"; };
+		57A4C8C01C026F44008CF210 /* Logo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A4C8C21C026F44008CF210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57A4C8C41C026F44008CF210 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		57A4C8C81C026F44008CF210 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		57A4C8CB1C026F44008CF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57A4C8CD1C026F44008CF210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57A4C8D01C026F44008CF210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57A4C8D21C026F44008CF210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A4C8DA1C02701C008CF210 /* settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		578E094C1BF4DBC2005BDA1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57A4C8BD1C026F44008CF210 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +68,9 @@
 		578E09461BF4DBC2005BDA1A = {
 			isa = PBXGroup;
 			children = (
+				57A4C8D71C026FDD008CF210 /* Core */,
 				578E09511BF4DBC2005BDA1A /* Logo */,
+				57A4C8C11C026F44008CF210 /* Logo-iOS */,
 				578E09501BF4DBC2005BDA1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				578E094F1BF4DBC2005BDA1A /* Logo.app */,
+				57A4C8C01C026F44008CF210 /* Logo-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,16 +87,38 @@
 		578E09511BF4DBC2005BDA1A /* Logo */ = {
 			isa = PBXGroup;
 			children = (
-				578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */,
 				578E09521BF4DBC2005BDA1A /* AppDelegate.swift */,
-				578E09541BF4DBC2005BDA1A /* GameScene.swift */,
-				578E09631BF4DD11005BDA1A /* Rabbit.swift */,
 				578E09561BF4DBC2005BDA1A /* GameScene.sks */,
 				578E09581BF4DBC2005BDA1A /* Assets.xcassets */,
 				578E095A1BF4DBC2005BDA1A /* MainMenu.xib */,
 				578E095D1BF4DBC2005BDA1A /* Info.plist */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		57A4C8C11C026F44008CF210 /* Logo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57A4C8DA1C02701C008CF210 /* settings.swift */,
+				57A4C8C21C026F44008CF210 /* AppDelegate.swift */,
+				57A4C8C81C026F44008CF210 /* GameViewController.swift */,
+				57A4C8C41C026F44008CF210 /* GameScene.sks */,
+				57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */,
+				57A4C8CA1C026F44008CF210 /* Main.storyboard */,
+				57A4C8CD1C026F44008CF210 /* Assets.xcassets */,
+				57A4C8D21C026F44008CF210 /* Info.plist */,
+			);
+			path = "Logo-iOS";
+			sourceTree = "<group>";
+		};
+		57A4C8D71C026FDD008CF210 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				578E09651BF4F1FD005BDA1A /* AlteHaasGroteskBold.ttf */,
+				578E09541BF4DBC2005BDA1A /* GameScene.swift */,
+				578E09631BF4DD11005BDA1A /* Rabbit.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +141,23 @@
 			productReference = 578E094F1BF4DBC2005BDA1A /* Logo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		57A4C8BF1C026F44008CF210 /* Logo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57A4C8D51C026F44008CF210 /* Build configuration list for PBXNativeTarget "Logo-iOS" */;
+			buildPhases = (
+				57A4C8BC1C026F44008CF210 /* Sources */,
+				57A4C8BD1C026F44008CF210 /* Frameworks */,
+				57A4C8BE1C026F44008CF210 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Logo-iOS";
+			productName = "Logo-iOS";
+			productReference = 57A4C8C01C026F44008CF210 /* Logo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +170,9 @@
 				TargetAttributes = {
 					578E094E1BF4DBC2005BDA1A = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					57A4C8BF1C026F44008CF210 = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
 			};
@@ -119,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				578E094E1BF4DBC2005BDA1A /* Logo */,
+				57A4C8BF1C026F44008CF210 /* Logo-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +207,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57A4C8BE1C026F44008CF210 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A4C8C51C026F44008CF210 /* GameScene.sks in Resources */,
+				57A4C8D11C026F44008CF210 /* LaunchScreen.storyboard in Resources */,
+				57A4C8D81C026FE6008CF210 /* AlteHaasGroteskBold.ttf in Resources */,
+				57A4C8CE1C026F44008CF210 /* Assets.xcassets in Resources */,
+				57A4C8CC1C026F44008CF210 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,6 +232,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57A4C8BC1C026F44008CF210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A4C8D61C026FD7008CF210 /* GameScene.swift in Sources */,
+				57A4C8C91C026F44008CF210 /* GameViewController.swift in Sources */,
+				57A4C8C31C026F44008CF210 /* AppDelegate.swift in Sources */,
+				57A4C8D91C026FF0008CF210 /* Rabbit.swift in Sources */,
+				57A4C8DB1C02701C008CF210 /* settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -157,6 +253,22 @@
 				578E095B1BF4DBC2005BDA1A /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		57A4C8CA1C026F44008CF210 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57A4C8CB1C026F44008CF210 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57A4C8CF1C026F44008CF210 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57A4C8D01C026F44008CF210 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +378,35 @@
 			};
 			name = Release;
 		};
+		57A4C8D31C026F44008CF210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Logo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xxiivv.Logo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57A4C8D41C026F44008CF210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Logo-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xxiivv.Logo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +424,15 @@
 			buildConfigurations = (
 				578E09611BF4DBC2005BDA1A /* Debug */,
 				578E09621BF4DBC2005BDA1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57A4C8D51C026F44008CF210 /* Build configuration list for PBXNativeTarget "Logo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A4C8D31C026F44008CF210 /* Debug */,
+				57A4C8D41C026F44008CF210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
