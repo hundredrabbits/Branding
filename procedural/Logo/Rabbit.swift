@@ -58,29 +58,43 @@ class Rabbit : SKNode
 	func sneak()
 	{
 		if moves.count < 1 { return }
-		let action_move = SKAction.moveTo(moves.last!, duration: 0.45)
+		let action_move = SKAction.moveTo(moves.last!, duration: 0.45 * animationRatio)
 		action_move.timingMode = .EaseInEaseOut
 		runAction(action_move)
 		
 		moves.removeLast()
 	}
-
+	
+	func appear(rank:Int)
+	{
+		let action_scale0 = SKAction.scaleTo(0, duration: 0)
+		let action_wait = SKAction.waitForDuration(0.03 * Double(rank) * animationRatio)
+		let action_scale1 = SKAction.scaleTo(1, duration: 0.5 * animationRatio)
+		
+		let sequence = SKAction.sequence([action_scale0, action_wait, action_scale1])
+		self.sprite.runAction(sequence)
+	}
+	
+	// MARK: Tools -
+	
+	enum Direction: UInt32
+	{
+		case Up
+		case Down
+		case Left
+		case Right
+		
+		static func random() -> Direction
+		{
+			let rand = arc4random_uniform(Right.rawValue+1)
+			return Direction(rawValue: rand)!
+		}
+	}
+	
+	// MARK: Default -
+	
 	required init?(coder aDecoder: NSCoder)
 	{
-	    fatalError("init(coder:) has not been implemented")
-	}
-}
-
-enum Direction: UInt32
-{
-	case Up
-	case Down
-	case Left
-	case Right
-	
-	static func random() -> Direction
-	{
-		let rand = arc4random_uniform(Right.rawValue+1)
-		return Direction(rawValue: rand)!
+		fatalError("init(coder:) has not been implemented")
 	}
 }
