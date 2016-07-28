@@ -29,13 +29,13 @@ class SplashGameScene: SKScene
 		createLogo()
 		createRabbits()
 		
-		NSTimer.scheduledTimerWithTimeInterval(3 * animationRatio, target: self, selector: "delayedStart", userInfo: nil, repeats: false)
+		NSTimer.scheduledTimerWithTimeInterval(3 * animationRatio, target: self, selector: #selector(SplashGameScene.delayedStart), userInfo: nil, repeats: false)
 	}
 	
 	func delayedStart()
 	{
-		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: "_appear", userInfo: nil, repeats: false)
-		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: "_call", userInfo: nil, repeats: true)
+		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._appear), userInfo: nil, repeats: false)
+		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._call), userInfo: nil, repeats: true)
 	}
 	
 	func createLogo()

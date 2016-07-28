@@ -39,7 +39,7 @@ class MainViewController: UIViewController
 	
 	func takeScreenshot()
 	{
-		if frameCount > 140 { exit(0) }
+		if frameCount > 240 { exit(0) }
 		
 		let fileManager = NSFileManager.defaultManager()
 		UIGraphicsBeginImageContextWithOptions(view.frame.size, false, UIScreen.mainScreen().scale)
@@ -48,7 +48,7 @@ class MainViewController: UIViewController
 		fileManager.createFileAtPath("/Users/VillaMoirai/Desktop/export/frame.\(frameCount).jpg", contents: screenshotFile, attributes: nil)
 		UIGraphicsEndImageContext()
 		
-		frameCount++
+		frameCount += 1
 	}
 	
 	// MARK: Defaults -
