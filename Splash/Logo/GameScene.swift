@@ -9,15 +9,15 @@ let rabbits = SKNode()
 var logo:SKLabelNode!
 var steps = 0
 let rabbitSize:CGFloat = 15
-let black = SKColor.blackColor()
-let white = SKColor.whiteColor()
+let black = SKColor.black
+let white = SKColor.white
 let animationRatio:Double = 2.5
 
 class SplashGameScene: SKScene
 {
 	var viewController: MainViewController!
 	
-	override func didMoveToView(view: SKView)
+	override func didMove(to view: SKView)
 	{
 		print(self.view?.frame)
 	}
@@ -29,20 +29,20 @@ class SplashGameScene: SKScene
 		createLogo()
 		createRabbits()
 		
-		NSTimer.scheduledTimerWithTimeInterval(3 * animationRatio, target: self, selector: #selector(SplashGameScene.delayedStart), userInfo: nil, repeats: false)
+		Timer.scheduledTimer(timeInterval: 3 * animationRatio, target: self, selector: #selector(SplashGameScene.delayedStart), userInfo: nil, repeats: false)
 	}
 	
 	func delayedStart()
 	{
-		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._appear), userInfo: nil, repeats: false)
-		NSTimer.scheduledTimerWithTimeInterval(0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._call), userInfo: nil, repeats: true)
+		Timer.scheduledTimer(timeInterval: 0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._appear), userInfo: nil, repeats: false)
+		Timer.scheduledTimer(timeInterval: 0.5 * animationRatio, target: self, selector: #selector(SplashGameScene._call), userInfo: nil, repeats: true)
 	}
 	
 	func createLogo()
 	{
 		logo = SKLabelNode(fontNamed: "Alte Haas Grotesk Bold")
-		logo.position = CGPoint(x:CGRectGetMidX(self.frame),y:CGRectGetMidY(self.frame) - (rabbitSize * 8))
-		logo.horizontalAlignmentMode = .Center
+		logo.position = CGPoint(x:self.frame.midX,y:self.frame.midY - (rabbitSize * 8))
+		logo.horizontalAlignmentMode = .center
 		logo.text = "hundredrabbits"
 		logo.fontSize = 20
 		logo.alpha = 0
@@ -63,7 +63,7 @@ class SplashGameScene: SKScene
 			x += 1
 		}
 		addChild(rabbits)
-		rabbits.position = CGPoint(x:CGRectGetMidX(self.frame),y:CGRectGetMidY(self.frame))
+		rabbits.position = CGPoint(x:self.frame.midX,y:self.frame.midY)
 		rabbits.alpha = 0
 		
 		scare()
@@ -76,8 +76,8 @@ class SplashGameScene: SKScene
 	
 	func displayLogo()
 	{
-		let action_fade = SKAction.fadeAlphaTo(1, duration: 1 * animationRatio)
-		logo.runAction(action_fade)
+		let action_fade = SKAction.fadeAlpha(to: 1, duration: 1 * animationRatio)
+		logo.run(action_fade)
 	}
 	
 	func _appear()
@@ -117,7 +117,7 @@ class SplashGameScene: SKScene
 		}
 	}
 	
-	override func update(currentTime: CFTimeInterval)
+	override func update(_ currentTime: TimeInterval)
 	{
 		viewController.takeScreenshot()
 	}

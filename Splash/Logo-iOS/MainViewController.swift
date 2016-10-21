@@ -10,8 +10,8 @@ class MainViewController: UIViewController
 	{
 		super.viewDidLoad()
 		
-		let value = UIInterfaceOrientation.LandscapeRight.rawValue
-		UIDevice.currentDevice().setValue(value, forKey: "orientation")
+		let value = UIInterfaceOrientation.landscapeRight.rawValue
+		UIDevice.current.setValue(value, forKey: "orientation")
 		
 		splash_load()
 	}
@@ -25,7 +25,7 @@ class MainViewController: UIViewController
 		scene = SplashGameScene(fileNamed:"Splash")
 		let skView = self.view as! SKView
 		scene.viewController = self
-		scene.scaleMode = .AspectFill
+		scene.scaleMode = .aspectFill
 		skView.presentScene(scene)
 		scene.start()
 	}
@@ -41,11 +41,11 @@ class MainViewController: UIViewController
 	{
 		if frameCount > 240 { exit(0) }
 		
-		let fileManager = NSFileManager.defaultManager()
-		UIGraphicsBeginImageContextWithOptions(view.frame.size, false, UIScreen.mainScreen().scale)
-		scene.view?.drawViewHierarchyInRect(view.frame, afterScreenUpdates: true)
-		let screenshotFile = UIImageJPEGRepresentation(UIGraphicsGetImageFromCurrentImageContext(), 1.0)
-		fileManager.createFileAtPath("/Users/VillaMoirai/Desktop/export/frame.\(frameCount).jpg", contents: screenshotFile, attributes: nil)
+		let fileManager = FileManager.default
+		UIGraphicsBeginImageContextWithOptions(view.frame.size, false, UIScreen.main.scale)
+		scene.view?.drawHierarchy(in: view.frame, afterScreenUpdates: true)
+		let screenshotFile = UIImageJPEGRepresentation(UIGraphicsGetImageFromCurrentImageContext()!, 1.0)
+		fileManager.createFile(atPath: "/Users/VillaMoirai/Desktop/export/frame.\(frameCount).jpg", contents: screenshotFile, attributes: nil)
 		UIGraphicsEndImageContext()
 		
 		frameCount += 1
@@ -53,17 +53,17 @@ class MainViewController: UIViewController
 	
 	// MARK: Defaults -
 	
-	override func shouldAutorotate() -> Bool
+	override var shouldAutorotate : Bool
 	{
 		return false
 	}
 	
-	override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+	override var supportedInterfaceOrientations : UIInterfaceOrientationMask
 	{
-		if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-			return .AllButUpsideDown
+		if UIDevice.current.userInterfaceIdiom == .phone {
+			return .allButUpsideDown
 		} else {
-			return .All
+			return .all
 		}
 	}
 	
@@ -72,7 +72,7 @@ class MainViewController: UIViewController
 		super.didReceiveMemoryWarning()
 	}
 	
-	override func prefersStatusBarHidden() -> Bool
+	override var prefersStatusBarHidden : Bool
 	{
 		return true
 	}

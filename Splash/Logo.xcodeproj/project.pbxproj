@@ -114,6 +114,7 @@
 					57A4C8BF1C026F44008CF210 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = B948MFAE5C;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -268,6 +269,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xxiivv.Logo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -284,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xxiivv.Logo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
