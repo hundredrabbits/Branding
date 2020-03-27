@@ -1,11 +1,25 @@
 <html>
   <head>    
-    <script type="text/javascript" src="scripts/logo.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
   </head>
-  <body>
+  <body style='background:black'>
+    <div id='logo'></div>
     <script type="text/javascript">
-      var logo = new Logo();
-      logo.install(120);
+      const logo = new Logo()
+
+      const logo = document.getElementById('logo')
+      // logo.width = parseInt(logo.style.width, 10)
+      // logo.height = parseInt(logo.style.height, 10)
+      // logo.style.backgroundColor = 'black'
+      // logo.style.padding = (logo.width / 2) + 'px'
+
+      // const logo_target = document.createElement('div')
+      // logo_target.style.width = logo.width + 'px'
+      // logo_target.style.height = logo.height + 'px'
+      // logo_target.style.position = 'relative'
+      // logo.appendChild(logo_target)
+
+      // logo.install(120);
     </script>
   </body>
 </html>
