@@ -1,22 +1,22 @@
 program Rabbits;
 
- procedure Draw (row, col, size, pad: integer);
+ procedure Draw (row, col, size, pad: INTEGER);
   var
    bounds: Rect;
  begin
-  setRect(bounds, col * size + pad, row * size + pad, (col * size + pad) + 8, (row * size + pad) + 8);
-  paintOval(bounds);
+  SetRect(bounds, col * size + pad, row * size + pad, (col * size + pad) + 8, (row * size + pad) + 8);
+  PaintOval(bounds);
  end;
 
  var
-  row, col: integer;
+  row, col: INTEGER;
 
 begin
 
  repeat
   col := 0;
   repeat
-   draw(row, col, 10, 60);
+   Draw(row, col, 10, 60);
    col := col + 1;
   until col = 10;
   row := row + 1;
